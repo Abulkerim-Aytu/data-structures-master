@@ -12,7 +12,7 @@ public class SinglyLinkedListApp {
           System.out.println(newHead.id);
           newHead=newHead.next;
       }
-
+        
 
 
     }
