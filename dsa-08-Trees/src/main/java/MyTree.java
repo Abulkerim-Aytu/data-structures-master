@@ -35,6 +35,7 @@ public class MyTree {
             }
         }
     }
+    // These three are Recursive methods
     // PreOrder Traversal of the tree
     // Root-Left-right
     void preOrderTraversal(TNode root){
@@ -55,6 +56,8 @@ public class MyTree {
         postOrderTraversal(root.rightChild); // branch and finish right subtree
         System.out.print(root.value+", ");  // visit root
     }
+
+    // This one is Iterator method
     void levelOrderTraversal(){
         if(root==null) return;
         Queue<TNode>  queue=new LinkedList<>();
