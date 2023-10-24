@@ -71,8 +71,10 @@ public class MyHeap {
     public boolean hasRightChild(int index){ return  rightChildIndex(index)<size;}
     public int leftChildIndex(int index){ return index*2 +1;}
     public int rightChildIndex(int index){ return index*2 +2;}
-    public int largerChildIndex(int index) {
+    public int largerChildIndex(int index) { // we use this method on BubbleDown method.
+        // no child
         if (!hasLeftChild(index)) return index;
+        // one child - left child
         else if (!hasRightChild(index)) {
             return leftChildIndex(index);
         }
