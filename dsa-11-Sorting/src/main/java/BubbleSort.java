@@ -8,7 +8,7 @@ public class BubbleSort {
                     swap=true;
                 }
             }
-            if(!swap) return array;
+            if(!swap) return array; // Help of this boolean performance of this algo is O(n).
         }
         return array;
     }
