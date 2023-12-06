@@ -1,5 +1,7 @@
 package ReviewTrees;
 
+import java.util.Arrays;
+
 public class VisualizeTree {
 
     public  static void printTree(TNode root, Trunk prev, boolean isLeft)
@@ -43,5 +45,11 @@ public class VisualizeTree {
 
         showTrunks(p.prev);
         System.out.print(p.str);
+
+
+
+        // Declaring an array of integers with a size of 5
+        int[] myArray = new int[5];
+        Arrays.stream(myArray).sorted();
     }
 }
